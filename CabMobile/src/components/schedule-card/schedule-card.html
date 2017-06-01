@@ -1,0 +1,58 @@
+<ion-label text-center class="schedule-day">{{tripData.scheduleDate}}</ion-label>
+<ion-card [ngClass]="{ 'completed': tripData.scheduleStatus  === 'completed', 
+                           'scheduled': tripData.scheduleStatus  === 'scheduled',
+                           'unscheduled': tripData.scheduleStatus  === 'unscheduled',
+                           'cancelled': tripData.scheduleStatus  === 'cancelled' 
+                          }">
+  <ion-card-content *ngIf="tripData">
+    <ion-row text-right>
+      <ion-col>
+        {{getTripStatus(tripData.scheduleStatus)}}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-5 class="schedule-time">
+        {{ formatScheduleTime(tripData.scheduleTime) }}
+      </ion-col>
+      <div class="align-bottom" *ngIf="showControls(tripData.scheduleStatus)">
+        <ion-col>
+          <ion-icon class="schedule-action-icon" 
+                    ios="ios-car" 
+                    md="md-car" 
+                    (click)="showMapModal(tripData.scheduleRouteId, 
+                        tripData.schedulePickupPoint,
+                        tripData.scheduleDropPoint)">
+          </ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon class="schedule-action-icon" ios="ios-create" md="md-create" (click)="showUpdateRide()">
+          </ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon class="schedule-action-icon" ios="ios-contacts" md="md-contacts" (click)="showRideMates()">
+          </ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon class="schedule-action-icon" ios="ios-close-circle-outline" md="md-close-circle">
+          </ion-icon>
+        </ion-col>
+      </div>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3>
+        Pickup :
+      </ion-col>
+      <ion-col>
+        {{ tripData.schedulePickupPoint }}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3>
+        Drop :
+      </ion-col>
+      <ion-col>
+        {{ tripData.scheduleDropPoint }}
+      </ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,35 @@
+page-update-ride-modal {
+  .toolbar-background {
+    background: #8AC349;
+  }
+  .toolbar-title {
+    color: #fff;
+    font-size: 20px;
+  }
+  .header-icon {
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+  }
+  .main {
+    background-color: #ECEAEC;
+    .img-icons {
+      width: 24px;
+    }
+    .scheduled-data {
+      ion-item {
+        background-color: #5895ef;
+        color: #fff;
+        p {
+          color: #fff;
+        }
+      }
+      .schedule-time {
+        font-size: 22px;
+      }
+      .scheduled-address {
+        width: 20%;
+      }  
+    }
+  }
+}

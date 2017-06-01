@@ -1,0 +1,52 @@
+page-home {
+  .toolbar-background {
+    background: #8AC349;
+  }
+  .toolbar-title {
+    color: #fff;
+    font-size: 20px;
+  }
+  .header-icon {
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .main {
+    background-color: #ECEAEC;
+
+    .completed {
+      background-color: #669d4d;
+    }
+    .scheduled {
+      background-color: #5895ef;
+    }
+    .unscheduled {
+      background-color: #8c8a8a;
+    }
+    .cancelled {
+      background-color: #f53d3d;
+    }
+    ion-card-header {
+      background-color: #ECEAEC;
+      padding-top: 0px;
+      font-size: 20px;
+    }
+    ion-card-content {
+      font-size: 14px;
+    }
+    ion-col {
+      color: #fff;
+    }
+    .schedule-time {
+      font-size: 22px;
+    }
+    .schedule-day {
+      font-size: 20px;
+      color: rgba(93, 92, 92, 0.86);
+    }
+    .schedule-action-icon {
+      font-size: 30px;
+    }
+  }
+}

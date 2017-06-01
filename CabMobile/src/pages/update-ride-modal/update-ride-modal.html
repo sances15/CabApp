@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <div class="header-icon">
+        <ion-icon class="schedule-action-icon"
+                  ios="ios-close-circle-outline"
+                  md="md-close-circle"
+                  (click)="closeUpdate()"></ion-icon>
+      </div>
+    </ion-buttons>
+    <ion-title class="title-color">Update Your Ride</ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content class="main">
+  <ion-card class="scheduled-data">
+    <ion-item no-lines>
+      <span item-left>Mon, Apr 11, 2017</span>
+      <span item-right>SCHEDULED</span>
+    </ion-item>
+    <ion-item>
+      <span class="schedule-time" item-left>10:15 PM</span>
+    </ion-item>
+    <ion-item>
+      <span class="scheduled-address" item-left>Pickup :</span>
+      <h2>CES - SSPDL Alpha City</h2>
+      <p>            1st Floor Beta Block
+                  No. 25, Rajiv Gandhi Salai
+                  Navalur, Chennai - 603103
+      </p>
+    </ion-item>
+    <ion-item>
+      <span class="scheduled-address" item-left>Drop :</span>
+      <h2>Thoraipakkam</h2>
+      <p>
+        TVH Svasti Appartments
+      </p>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-label>Change start time</ion-label>
+      <ion-toggle checked="false"></ion-toggle>
+    </ion-item>
+    <ion-list no-lines radio-group>
+      <ion-item>
+        <ion-label>10:15 PM</ion-label>
+        <ion-radio checked="true"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>11:00 PM</ion-label>
+        <ion-radio value="11"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>12:00 AM</ion-label>
+        <ion-radio value="12"></ion-radio>
+      </ion-item>
+    </ion-list>
+
+    <ion-item>
+       <button ion-button clear item-right text-large>Update</button>
+    </ion-item>
+  </ion-card>
+</ion-content>

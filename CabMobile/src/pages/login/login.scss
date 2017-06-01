@@ -1,0 +1,71 @@
+page-login {
+  .main {
+
+    background: linear-gradient(180deg, #303F56 0%, #182134 100%);
+    .main-view {
+
+      margin-top: 30%;
+
+      .main-icon {
+        text-align: center;
+        color: #2baeab;
+        font-size: 72px;
+        font-weight: bold;
+        padding-bottom: 30px;
+      }
+      .action-items {
+        top: 5%;
+        position: relative;
+
+        ion-list {
+
+          padding: 0 20px;
+
+          .item.item-input {
+            background-color: transparent;
+            border-bottom: 1px solid white;
+            padding-left: 0;
+          }
+
+          .item-input:-webkit-input-placeholder {
+            text-indent: 0;
+            color: red;
+          }
+
+          .icon {
+            color: #fff;
+            font-size: 26px;
+            margin-top: 8px;
+          }
+        }
+
+        ion-label {
+          color: #fff;
+        }
+
+        ion-input {
+          color: #fff;
+        }
+
+        .button-div {
+          padding: 0 20px;
+        }
+
+        button {
+          background: linear-gradient(270deg, #36A59F 0%, #14A5C4 100%);
+          color: #fff;
+          font-size: 16px;
+          font-weight: bold;
+          border-radius: 5px;
+        }
+
+        .forgot-div {
+          text-align: center;
+          color: #9E9E9E;
+          font-size: 16px;
+          padding: 10px 0px;
+        }
+      }
+    }
+  }
+}

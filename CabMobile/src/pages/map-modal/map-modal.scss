@@ -1,0 +1,33 @@
+ion-app._gmaps_cdv_ .nav-decor{
+  background-color: transparent !important;
+}
+
+page-map-modal {
+    
+  .toolbar-background {
+    background: #8AC349;
+  }
+  .toolbar-title {
+    color: #fff;
+    font-size: 20px;
+  }
+  .header-icon {
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+  }
+  #map {
+    height: 40%;
+    margin: 16px 16px;
+  }
+  .main {
+    background-color: #ECEAEC;
+    .img-icons {
+      width: 24px;
+    }
+    .eta-items {
+      border-top: 1px;
+      border-top-style: outset;
+    }
+  }
+}
