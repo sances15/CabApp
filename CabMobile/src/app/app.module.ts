@@ -5,7 +5,6 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
 
 import { MapModalPage } from '../pages/map-modal/map-modal'
@@ -33,7 +32,6 @@ import { LoadingMessage } from '../shared/loading.service';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage,
     LoginPage,
     MapModalPage,
     UpdateRideModalPage,
@@ -50,7 +48,6 @@ import { LoadingMessage } from '../shared/loading.service';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage,
     LoginPage,
     MapModalPage,
     UpdateRideModalPage,
