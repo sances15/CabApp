@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { TabsPage } from '../tabs/tabs';
+import { HomePage } from '../home/home';
 
 @Component({
   selector: 'page-login',
@@ -13,6 +13,6 @@ export class LoginPage {
 
   }
   showNextView() {
-    this.navCtrl.push(TabsPage);
+    this.navCtrl.push(HomePage);
   }
 }
